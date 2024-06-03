@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Routes, Route, useNavigate, Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { ProtectedRoute } from "./components";
+// import { ProtectedRoute } from "./components";
 import { userState } from "./types";
 import { authCheck } from "./context/actions/actions";
 import { AppDispatch } from "./context/store";
