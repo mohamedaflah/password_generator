@@ -13,6 +13,7 @@ const ProtectedRoute: FC<ProtectedRouteProps> = ({ element }) => {
     const navigate = useNavigate()
     useEffect(() => {
         const check = async () => {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             const res: any = await dispatch(authCheck())
             if (!res.payload?.success) {
                 navigate('/login')
