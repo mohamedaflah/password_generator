@@ -10,7 +10,7 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
   const PORT: number = configService.get<number>('PORT');
   PORT;
-  const CLIENT_URL: string = 'http://localhost:5174';
+  const CLIENT_URL: string = 'https://password-generator-2uya.onrender.com';
   const GLOBAL_PREFIX: string = configService.get<string>('GLOBAL_PREFIX');
 
   // global
