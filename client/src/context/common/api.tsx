@@ -1,7 +1,8 @@
 import axios from "axios"
 import toast from "react-hot-toast";
 
-export const URL: string = "http://localhost:3000/api"
+// export const URL: string = "http://localhost:3000/api"
+export const URL: string = "https://password-generator-server.onrender.com/api"
 
 const axiosInstance = axios.create({
     baseURL: URL,
